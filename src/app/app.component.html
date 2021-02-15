@@ -1,5 +1,5 @@
 <nav role="navigation" class="navbar navbar-expand-lg header" id="header">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" routerLink="home" routerLinkActive="active-router">
     <span class="title">Astronux</span>
   </a>
   <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
   <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Układ słoneczny</a>
+        <a class="nav-link" id="solar-system" routerLink="solar-system" routerLinkActive="active-router">Układ słoneczny</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Wszechświat</a>
@@ -24,3 +24,4 @@
   </div>
 </nav>
 
+<router-outlet></router-outlet>

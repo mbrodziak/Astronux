@@ -1,0 +1,39 @@
+.objects {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0 0 0;
+}
+
+.object {
+    border: 1px solid #333333;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 2vw 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-size: bold;    
+}
+
+.object-name {
+    position: absolute;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: all 0.5s ease-in-out;
+}
+
+.object:hover > img {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.object:hover > .object-name {
+    display: none;
+} 
