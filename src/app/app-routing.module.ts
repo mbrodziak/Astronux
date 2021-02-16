@@ -2,15 +2,31 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
+import { PlanetsComponent } from './solar-system/planets/planets.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
+    component: HomeComponent
   },
   {
     path: 'solar-system',
-    component: SolarSystemComponent,
+    children: [
+        {
+            path: '',
+            pathMatch: 'full',
+            component: SolarSystemComponent,
+        },
+        {
+            path: 'planets',
+            component: PlanetsComponent,
+        },
+    ],
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
 ];
 
