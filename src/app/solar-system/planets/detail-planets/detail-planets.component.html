@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>{{ planet.name }}</h1>
+
+    <div class="all-information">
+        <img src="../assets/{{ planet.photo }}">
+        <div class="information">
+            <h5 *ngIf="planet.name != 'Ziemia'">Odkrywca: {{ planet.discovery }} </h5>
+            <h5>Typ planety: {{ planet.type }} </h5>
+            <h5>Okres orbitalny: {{ planet.orbitalPeriod }} </h5>
+            <h5>Masa: {{ planet.mass }} </h5>
+            <h5>Pole powierzchni: {{ planet.surfaceArea }}</h5>
+            <h5>Temperatura powierzchni: {{ planet.temperature }} </h5>
+            <h5>Przyśpieszenie grawitacyjne: {{ planet.surfaceGravity }}</h5>
+            <h5>Prędkość ucieczki: {{ planet.escapeVelocity }}</h5>
+            <h5>Albedo: {{ planet.albedo }}</h5>
+            <h5>Satelity naturalne: {{ planet.moons }}</h5>
+            <h5 *ngIf="planet.name == 'Merkury' || planet.name == 'Wenus' || planet.name == 'Ziemia' || planet.name == 'Mars'">
+                Ciśnienie atmosferyczne: {{ planet.surfacePressure }} 
+            </h5>
+        </div>
+    </div>
+    
+    <p *ngFor="let desc of planet.description">{{ desc }}</p>
+</div>
