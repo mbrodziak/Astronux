@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>{{ moon.name }}</h1>
+
+    <div class="all-information">
+        <img src="../assets/{{ moon.photo }}">
+        <div class="information">
+            <h5>Planeta: {{ moon.planet }} </h5>
+            <h5 *ngIf="moon.name != 'Księżyc'">Odkrywca: {{ moon.discoverer }} </h5>
+            <h5 *ngIf="moon.name != 'Księżyc'">Data odkrycia: {{ moon.dateDiscovery }} </h5>
+            <h5>Okres obiegu: {{ moon.orbitalPeriod }} </h5>
+            <h5>Masa: {{ moon.mass }} </h5>
+            <h5 *ngIf="moon.name != 'Enceladus' && moon.name != 'Tetyda'">Pole powierzchni: {{ moon.surfaceArea }}</h5>
+            <h5>Temperatura powierzchni: {{ moon.temperature }} </h5>
+            <h5>Przyśpieszenie grawitacyjne: {{ moon.surfaceGravity }}</h5>
+            <h5>Prędkość ucieczki: {{ moon.escapeVelocity }}</h5>
+            <h5>Albedo: {{ moon.albedo }}</h5>
+            <h5>Jasność obserowana (z Ziemi): {{ moon.apparentMagnitude }}</h5>
+        </div>
+    </div>
+    
+    <p *ngFor="let desc of moon.description">{{ desc }}</p>
+</div>

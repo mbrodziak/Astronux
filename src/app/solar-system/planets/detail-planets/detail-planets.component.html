@@ -4,7 +4,8 @@
     <div class="all-information">
         <img src="../assets/{{ planet.photo }}">
         <div class="information">
-            <h5 *ngIf="planet.name != 'Ziemia'">Odkrywca: {{ planet.discovery }} </h5>
+            <h5 *ngIf="planet.name != 'Ziemia'">Odkrywca: {{ planet.discoverer }} </h5>
+            <h5 *ngIf="planet.name != 'Ziemia'">Data odkrycia {{ planet.dateDiscovery }} </h5>
             <h5>Typ planety: {{ planet.type }} </h5>
             <h5>Okres orbitalny: {{ planet.orbitalPeriod }} </h5>
             <h5>Masa: {{ planet.mass }} </h5>
