@@ -10,6 +10,7 @@ import { PlanetsComponent } from './solar-system/planets/planets.component';
 import { MoonsComponent } from './solar-system/moons/moons.component';
 import { DetailPlanetsComponent } from './solar-system/planets/detail-planets/detail-planets.component';
 import { DetailMoonsComponent } from './solar-system/moons/detail-moons/detail-moons.component';
+import { SunComponent } from './solar-system/sun/sun.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DetailMoonsComponent } from './solar-system/moons/detail-moons/detail-m
     PlanetsComponent,
     MoonsComponent,
     DetailPlanetsComponent,
-    DetailMoonsComponent
+    DetailMoonsComponent,
+    SunComponent
   ],
   imports: [
     BrowserModule,

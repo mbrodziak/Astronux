@@ -6,6 +6,7 @@ import { PlanetsComponent } from './solar-system/planets/planets.component';
 import { MoonsComponent } from './solar-system/moons/moons.component';
 import { DetailPlanetsComponent } from './solar-system/planets/detail-planets/detail-planets.component';
 import { DetailMoonsComponent } from './solar-system/moons/detail-moons/detail-moons.component';
+import { SunComponent } from './solar-system/sun/sun.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
                 component: DetailMoonsComponent,
               },
             ]
+        },
+        {
+          path: 'sun',
+          component: SunComponent,
         },
     ],
   },
