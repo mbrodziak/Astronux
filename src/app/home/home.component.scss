@@ -1,0 +1,22 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+h3 {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    height: 50vh;
+    margin: 0 15vw 5vh 15vw;
+    font-size: calc(18px + (30 - 18) * ((100vw - 200px) / (1920 - 200)));
+    font-weight: bold;
+}
+
