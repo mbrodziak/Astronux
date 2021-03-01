@@ -38,3 +38,12 @@ img {
 .moon:hover > .moon-name {
     display: none;
 } 
+
+@media (max-width: 651px) {
+
+    .moon {
+        width: 80vmin;
+        height: 80vmin;
+        font-size: calc(30px + (60 - 30) * ((100vw - 200px) / (651 - 200)));
+    }
+}

@@ -10,13 +10,14 @@ video {
   }
 
 h3 {
-    position: absolute;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
-    height: 50vh;
+    position: fixed;
+    height: 100%;
     margin: 0 15vw 5vh 15vw;
-    font-size: calc(18px + (30 - 18) * ((100vw - 200px) / (1920 - 200)));
+    font-size: calc(16px + (30 - 16) * ((100vw - 200px) / (1920 - 200)));
     font-weight: bold;
+    background-attachment: fixed;
 }
 

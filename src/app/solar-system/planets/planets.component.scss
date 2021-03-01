@@ -38,3 +38,12 @@ img {
 .planet:hover > .planet-name {
     display: none;
 } 
+
+@media (max-width: 651px) {
+
+    .planet {
+        width: 80vmin;
+        height: 80vmin;
+        font-size: calc(30px + (60 - 30) * ((100vw - 200px) / (651 - 200)));
+    }
+}
