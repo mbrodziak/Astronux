@@ -1,0 +1,26 @@
+.container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+h3 {
+    margin: 3vh 0 3vh 0;
+    display: flex;
+    justify-content: center;
+    font-size: calc(20px + (36 - 20) * ((100vw - 200px) / (1920 - 200)));
+    font-weight: bold;
+}
+
+li {
+    margin: 1vh 0 1vh 0;
+    font-size: calc(14px + (26 - 14) * ((100vw - 200px) / (1920 - 200)));
+    font-weight: bold;
+}
+
+a {
+    color: #ffffff;   
+}
