@@ -1,7 +1,7 @@
 <div class="moons" >
     <div *ngFor="let moon of moons">
         <div class="moon" id="{{ moon.id }}" routerLink="{{ moon.id }}" routerLinkActive="active-router">
-            <img src="../assets/{{ moon.photo }}">
+            <img src="../assets/{{ moon.photo }}" alt=" {{ moon.name }}">
             <div class="moon-name">{{ moon.name }}</div>
         </div>
     </div>

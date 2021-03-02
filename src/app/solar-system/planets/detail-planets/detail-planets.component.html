@@ -2,7 +2,7 @@
     <h1>{{ planet.name }}</h1>
 
     <div class="all-information">
-        <img src="../assets/{{ planet.photo }}">
+        <img src="../assets/{{ planet.photo }}" alt="{{ planet.name }}">
         <div class="information">
             <h5 *ngIf="planet.name != 'Ziemia'">Odkrywca: {{ planet.discoverer }} </h5>
             <h5 *ngIf="planet.name != 'Ziemia'">Data odkrycia {{ planet.dateDiscovery }} </h5>

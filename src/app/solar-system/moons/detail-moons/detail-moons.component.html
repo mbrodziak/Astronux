@@ -2,7 +2,7 @@
     <h1>{{ moon.name }}</h1>
 
     <div class="all-information">
-        <img src="../assets/{{ moon.photo }}">
+        <img src="../assets/{{ moon.photo }}" alt="{{ moon.name }}">
         <div class="information">
             <h5>Planeta: {{ moon.planet }} </h5>
             <h5 *ngIf="moon.name != 'Księżyc'">Odkrywca: {{ moon.discoverer }} </h5>

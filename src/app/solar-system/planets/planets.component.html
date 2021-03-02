@@ -1,7 +1,7 @@
 <div class="planets" >
     <div *ngFor="let planet of planets">
         <div class="planet" id="{{planet.id}}" routerLink="{{planet.id}}" routerLinkActive="active-router">
-            <img src="../assets/{{ planet.photo }}">
+            <img src="../assets/{{ planet.photo }}" alt="{{ planet.name }}">
             <div class="planet-name">{{ planet.name }}</div>
         </div>
     </div>
