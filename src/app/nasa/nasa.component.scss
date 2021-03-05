@@ -1,0 +1,150 @@
+.container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6); 
+    text-align: justify;
+}
+
+h1 {
+    margin: 3vh 0 3vh 0;
+    display: flex;
+    justify-content: center;
+    font-size: calc(25px + (50 - 25) * ((100vw - 200px) / (1920 - 200)));
+}
+
+img {
+    width: 40%;
+    height: 40%;
+    margin: 0 0 3vh 5vw;
+}
+
+.all-information {
+    display: flex;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 3vw;
+}
+
+h5 {
+    font-size: calc(11px + (22 - 11) * ((100vw - 200px) / (1920 - 200)));
+    font-weight: bold;
+}
+
+p {
+    font-size: calc(13px + (25 - 13) * ((100vw - 200px) / (1920 - 200)));
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 3vh 0 2vh 0;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    color: #000000;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0.5% 0.2% 0.5% 0.2%;
+}
+
+button:hover {
+    background-color: #aeaeae;
+    border: 1px solid #aeaeae;
+}
+
+table {
+    margin: 2vh 0 2vh 0;
+    text-align: center;
+    background-color: black;
+    border: .1px solid #aeaeae;
+    font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1920 - 768)));
+}
+
+th {
+    font-size: calc(14px + (18 - 14) * ((100vw - 768px) / (1920 - 768)));
+    font-weight: bold;
+    width: 10vw;
+}
+
+@media (max-width: 992px) {
+    
+    .all-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information {
+        border-bottom: 1px solid #ffffff;
+        margin: 3vh 0 5vh 0;
+    }
+
+    img {
+        width: 70%;
+        height: 70%;
+        margin: 0 0 3vh 0;
+    }
+
+    h5 {
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+@media  (max-width: 768px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+        font-size: calc(8px + (16 - 8) * ((100vw - 200px) / (768 - 200)));
+	}
+
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	td { 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+        position: absolute;
+		left: 6px;
+		width: 40%; 
+	}
+	
+	td:nth-of-type(1):before { 
+        content: "Program"; 
+    }
+
+	td:nth-of-type(2):before { 
+        content: "Rozpoczęcie"; 
+    }
+
+	td:nth-of-type(3):before { 
+        content: "Zakończenie"; 
+    }
+
+	td:nth-of-type(4):before { 
+        content: "Misje Załogowe"; 
+    }
+
+	td:nth-of-type(5):before { 
+        content: "Opis"; 
+    }
+}
