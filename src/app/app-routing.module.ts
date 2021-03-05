@@ -10,6 +10,7 @@ import { SunComponent } from './solar-system/sun/sun.component';
 import { SourcesComponent } from './sources/sources.component';
 import { NasaComponent } from './nasa/nasa.component';
 import { SpacexComponent } from './spacex/spacex.component';
+import { UniverseComponent } from './universe/universe.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
           component: SunComponent,
         },
     ],
+  },
+  {
+    path: 'universe',
+    component: UniverseComponent,
   },
   {
     path: 'nasa',

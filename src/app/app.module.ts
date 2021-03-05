@@ -14,6 +14,7 @@ import { SunComponent } from './solar-system/sun/sun.component';
 import { SourcesComponent } from './sources/sources.component';
 import { NasaComponent } from './nasa/nasa.component';
 import { SpacexComponent } from './spacex/spacex.component';
+import { UniverseComponent } from './universe/universe.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SpacexComponent } from './spacex/spacex.component';
     SunComponent,
     SourcesComponent,
     NasaComponent,
-    SpacexComponent
+    SpacexComponent,
+    UniverseComponent
   ],
   imports: [
     BrowserModule,
