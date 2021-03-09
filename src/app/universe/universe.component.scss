@@ -1,10 +1,12 @@
+.content {
+    position: fixed;
+}
+
 img {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    position: fixed;
     z-index: -1;
-    overflow-y: hidden;
 }
 
 h3 {
@@ -12,8 +14,8 @@ h3 {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 90vh;
     margin: 0 30vw 0 30vw;
-    font-size: calc(12px + (30 - 12) * ((100vw - 200px) / (1920 - 200)));
-    font-weight: bold;
+    top: 40%;
+    font-size: calc(14px + (30 - 14) * ((100vw - 200px) / (1920 - 200)));
+    font-size: bold;
 }
