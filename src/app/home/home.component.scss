@@ -1,6 +1,7 @@
 .content {
-  height: 100vh;
+  height: calc(100vh - 60px);
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .fade {
