@@ -10,7 +10,7 @@
 To run this project clone this repository. Next:
 
 ```
-$ cd Konwerter
+$ cd Astronux
 $ npm install
 $ npm start or ng serve or node server.js
 ```
