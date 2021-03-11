@@ -14,8 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(20px + (40 - 20) * ((100vw - 576px) / (1920 - 576)));
-    font-size: bold;    
+    font-size: calc(20px + (40 - 20) * ((100vw - 576px) / (1920 - 576)));    
 }
 
 .object-name {
