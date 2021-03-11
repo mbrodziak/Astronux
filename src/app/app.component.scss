@@ -1,7 +1,7 @@
 .navbar {
     background-color:#212121;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
     overflow-x: hidden;
 }
@@ -9,7 +9,7 @@
 .title {
     color: #005b9f;
     letter-spacing: 0.3em;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 900;
     margin: 0 10vw 0 0;
 }
@@ -17,3 +17,60 @@
 .nav-link {
     margin: 0 8vw 0 0;
 }
+
+
+@media (max-width: 1354px) {
+
+    .navbar {
+        font-size: .875rem;
+    }
+    
+    .title {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .navbar {
+        font-size: .8125rem;
+    }
+}
+
+@media (max-width: 1075px) {
+
+    .navbar {
+        font-size: .70rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .navbar {
+        font-size: 1.125rem;
+    }
+    
+    .title {
+        font-size: 1.375rem;
+    }
+} 
+
+@media (max-width: 275px) {
+
+    .navbar {
+        font-size: .7rem;
+    }
+
+    .title {
+        font-size: .8rem;
+    }
+
+    .navbar-toggler-icon {
+        width: .7em;
+        height: .7em;
+    }
+} 
